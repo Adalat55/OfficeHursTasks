@@ -1,4 +1,4 @@
-package com.cybertek.tests;
+package com.cybertek.officehours.oHO1;
 
 import com.cybertek.utils.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -30,10 +30,11 @@ The Web Application under test http://todomvc.com/
         driver.manage().window().maximize();
         driver.get(url);
 
+
+
         WebElement tabLink= driver.findElement(By.xpath("//div[.='JavaScript']"));
         tabLink.click();
-        WebElement link= driver.findElement(By.linkText("Polymer"));
-        link.click();
+
 
         WebElement addBox= driver.findElement(By.id("new-todo"));
 
